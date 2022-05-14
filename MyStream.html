@@ -679,11 +679,10 @@
       let text = result[1];
       console.log("openlink",type,text);
       if(text == ''){
-        //banner("","生配信が見つかりませんでした");
         showAlert('視聴失敗','生配信が見つかりませんでした');
         return;
       }
-      showAlert('メンテナンス中','生配信リンクの自動取得機能が使えません');
+      //showAlert('メンテナンス中','生配信リンクの自動取得機能が使えません');
 
       var url = new URL(window.location);
 
@@ -853,7 +852,7 @@
 
     startWindow();
     restartWindow();
-    showAlert('メンテナンス中','生配信リンクの自動取得機能が使えません');
+    //showAlert('メンテナンス中','生配信リンクの自動取得機能が使えません');
 
     //ここからバナーとアラート・ポップアップ
     /*
