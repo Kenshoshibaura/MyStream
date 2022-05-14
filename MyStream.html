@@ -906,7 +906,7 @@
       var p = document.createElement('p');
       p.innerHTML = txt;
       var time = document.createElement('div');
-      time.innerHTML = "Auto Close : 10 sec.";
+      time.innerHTML = "Auto Close : 100 sec.";
       var cancel = document.createElement('button');
       cancel.innerHTML = "キャンセル";
       cancel.setAttribute("onclick","hideConfirm(this);");
@@ -928,7 +928,7 @@
         div2.appendChild(time);
         console.log(time.innerHTML.replace(/[^0-9]/g,""));
         var timeout = setInterval(function(time){time.innerHTML = "Auto Close : "+(parseInt(time.innerHTML.replace(/[^0-9]/g,""))-1)+" sec.";},1000,time);
-        setTimeout(function(div1,timeout){clearInterval(timeout);console.log(div1);div1.remove(div1);},11000,div1,timeout);
+        setTimeout(function(div1,timeout){clearInterval(timeout);console.log(div1);div1.remove(div1);},101000,div1,timeout);
       }
     }
     function hideConfirm(obj,fc=function(){}){
